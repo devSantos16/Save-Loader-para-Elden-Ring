@@ -9,7 +9,7 @@
     <Window.Background>
         <ImageBrush ImageSource="/background.jpg"/>
     </Window.Background>
-    <ContentControl>
-        <Rectangle HorizontalAlignment="Center" Height="88" Stroke="Black" VerticalAlignment="Top" Width="780" Fill="#69000000" Margin="0,43,0,0"/>
-    </ContentControl>
+    <Grid>
+        <Label Name ="lbNomePasta" Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
+    </Grid>
 </Window>
