@@ -9,7 +9,15 @@
     <Window.Background>
         <ImageBrush ImageSource="/background.jpg"/>
     </Window.Background>
-    <Grid>
-        <Label Name ="lbNomePasta" Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
-    </Grid>
+    <ScrollViewer>
+        <StackPanel>
+            <Label Name ="lbNomePasta" Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
+            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
+            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
+            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
+            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
+            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
+            
+        </StackPanel>
+    </ScrollViewer>
 </Window>

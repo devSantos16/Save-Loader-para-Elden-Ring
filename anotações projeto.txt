@@ -1,0 +1,16 @@
+O que foi feito:
+
+	Copiar Pasta
+	Ler Arquivo {Generalizar o Copiar Pasta (Estudar manipulação de string)}
+
+
+
+
+	Falta: 
+
+	Criar classes e metodos
+	criar Front end
+	
+	
+
+	
