@@ -28,12 +28,21 @@ namespace SaveLoaderER
         {
             InitializeComponent();
 
+           
+
             Arquivo SaveFile = new Arquivo();
             SaveFile.save_path = DIRETORIO_ARQUIVO_SAVE;
 
             SaveFile.AdicionarPastaEArquivos(SaveFile.save_path, SaveFile.all_save_path);
             SaveFile.AcessarArquivosSalvado(SaveFile.save_path);
-            
+
+
+            for (int i = 0; i < 40; i++)
+            {
+                UserControl1 user = new UserControl1(SaveFile.save_path);
+                Painel.Children.Add(user);
+            }
+
 
 
 

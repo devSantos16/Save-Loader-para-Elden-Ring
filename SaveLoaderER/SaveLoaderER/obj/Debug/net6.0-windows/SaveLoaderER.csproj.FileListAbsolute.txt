@@ -4,11 +4,9 @@ E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\b
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\bin\Debug\net6.0-windows\SaveLoaderER.dll
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\bin\Debug\net6.0-windows\SaveLoaderER.pdb
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER.csproj.AssemblyReference.cache
-E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\MainWindow.g.cs
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\App.g.cs
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER_MarkupCompile.cache
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER_MarkupCompile.lref
-E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\MainWindow.baml
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER.g.resources
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER.GeneratedMSBuildEditorConfig.editorconfig
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER.AssemblyInfoInputs.cache
@@ -19,3 +17,7 @@ E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\o
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER.pdb
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\SaveLoaderER.genruntimeconfig.cache
 E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\ref\SaveLoaderER.dll
+E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\MainService.g.cs
+E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\MainService.baml
+E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\obj\Debug\net6.0-windows\MainWindow.baml

@@ -9,15 +9,19 @@
     <Window.Background>
         <ImageBrush ImageSource="/background.jpg"/>
     </Window.Background>
-    <ScrollViewer>
+    <Grid>
         <StackPanel>
-            <Label Name ="lbNomePasta" Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
-            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
-            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
-            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
-            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
-            <Label Content="Teste" Foreground="White" HorizontalAlignment="Left" Margin="112,100,0,0" VerticalAlignment="Top"/>
-            
+            <Grid Margin="0,0,0,334">
+                <Rectangle Height="100" Fill="#E5000000" Margin="0,0,1,0"/>
+                <Button Content="Adicionar Arquivo" Margin="0,0,670,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+            </Grid>
         </StackPanel>
-    </ScrollViewer>
+        <ScrollViewer Margin="0,100,0,0">
+            <StackPanel Name="Painel">
+            </StackPanel>
+        </ScrollViewer>
+
+
+    </Grid>
+
 </Window>

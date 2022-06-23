@@ -9,10 +9,14 @@
 
   <ItemGroup>
     <None Remove="background.jpg" />
+    <None Remove="play.png" />
+    <None Remove="settings.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="background.jpg" />
+    <Resource Include="play.png" />
+    <Resource Include="settings.png" />
   </ItemGroup>
 
 </Project>

@@ -6,3 +6,13 @@ SaveLoaderER/.vs/SaveLoaderER/v17/.suo
 SaveLoaderER/.vs/
 
 *.v2
+
+*.dll
+
+*.pdb
+
+*.baml
+
+*.resources
+
+*.cache
