@@ -5,20 +5,20 @@ O que foi feito:
 	Criar classes e metodos
 
 
+	O que estou fazendo
+
+	criar Front end
+	criar archive_directory
+	criar fr
 
 
 	Falta: 
 
-	
-	criar Front end
 	criar banco de dados
-	criar archive_directory
+	
 	
 
 
-Oq tem que fazer agora (temporario)
-
-Criar um diretorio (onde vai conter as pastas dos saves)
 
 
 	

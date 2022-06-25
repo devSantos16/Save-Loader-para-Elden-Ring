@@ -15,8 +15,6 @@ namespace SaveLoaderER
             InitializeComponent();
 
             Arquivo InitializeArchive = new Arquivo();
-
-            // string[] lista = InitializeArchive.AcessarArquivosSalvo();
             List<string> lista = InitializeArchive.AcessarArquivosSalvo();
 
             foreach(string listaArquivos in lista)
@@ -25,12 +23,6 @@ namespace SaveLoaderER
                 a.name_path = listaArquivos;
                 AdicionarItemTOControle(a);
             }
-            
-          
-
-
-
-
         }
 
         private void AdicionarItemTOControle(Arquivo SaveFile)
@@ -52,8 +44,6 @@ namespace SaveLoaderER
 
             SaveFile.AdicionarPastaEArquivos(SaveFile.save_path);
             AdicionarItemTOControle(SaveFile);
-
-
         }
     }
 }

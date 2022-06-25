@@ -6,10 +6,10 @@
              xmlns:local="clr-namespace:SaveLoaderER"
              mc:Ignorable="d" Height="93" Width="784">
 
-    <Grid>
-        <Rectangle Height="100" Width="783" Opacity="0.5" Name="Teste" Fill="Black"></Rectangle>
-        <Label Foreground="White" Name = "NomeArquivo"  HorizontalAlignment="Left" Width="470" Height="28" VerticalAlignment="Center" Margin="58,0,0,0">Nome Arquivo</Label>
-        <Label Foreground="White" Name ="CaminhoDiretorio" HorizontalAlignment="Left" Content="Teste" Margin="58,60,0,5" FontSize="8" Width="578"></Label>
+    <Grid Opacity="0.5"  MouseLeave="UserControl_MouseLeave" MouseEnter="UserControl_MouseEnter" Name="rectangleControl">
+        <Rectangle Height="100" Width="783"  Fill="Black"></Rectangle>
+        <Label Foreground="White" Name = "NomeArquivo"  HorizontalAlignment="Left" Width="470" Height="28" VerticalAlignment="Top" Margin="58,26,0,0" FontSize="14">Nome Arquivo</Label>
+        <Label Foreground="White" Name ="CaminhoDiretorio" HorizontalAlignment="Left" Content="Teste" Margin="58,60,0,5" FontSize="10" Width="578"></Label>
         <Button HorizontalAlignment="Left" Width="14" Height="14" VerticalAlignment="Center" Margin="722,0,0,0" Foreground="{x:Null}" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/settings.png" Stretch="Uniform" TileMode="None"/>

@@ -25,7 +25,18 @@ namespace SaveLoaderER
             InitializeComponent();
             NomeArquivo.Content = nome_pasta;
             CaminhoDiretorio.Content = caminho_diretorio + @"\" + nome_pasta;
-            //NomeArquivo.Content = caminho_diretorio + @"\" + nome_pasta;
+        }
+        private void UserControl_MouseEnter(object sender, MouseEventArgs e)
+        {
+            rectangleControl.Opacity = 0.7;
+        }
+
+        private void UserControl_MouseLeave(object sender, MouseEventArgs e)
+        {
+            rectangleControl.Opacity = 0.5;
         }
     }
+    
+
+
 }
