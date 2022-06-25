@@ -1,19 +1,7 @@
 ﻿using SaveLoaderER.Classes;
-using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace SaveLoaderER
 {
@@ -22,28 +10,48 @@ namespace SaveLoaderER
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string DIRETORIO_ARQUIVO_SAVE = @"C:\Users\nel_2\OneDrive\Resto\Área de Trabalho\76561198900787417";
-
         public MainWindow()
         {
             InitializeComponent();
 
-           
+            Arquivo InitializeArchive = new Arquivo();
+
+            // string[] lista = InitializeArchive.AcessarArquivosSalvo();
+            List<string> lista = InitializeArchive.AcessarArquivosSalvo();
+
+            foreach(string listaArquivos in lista)
+            {
+                Arquivo a = new Arquivo();
+                a.name_path = listaArquivos;
+                AdicionarItemTOControle(a);
+            }
+            
+          
+
+
+
+
+        }
+
+        private void AdicionarItemTOControle(Arquivo SaveFile)
+        {
+            UserControl1 user = new UserControl1(SaveFile.name_path, SaveFile.all_save_path);
+            Painel.Children.Add(user);
+            
+        }
+
+        private void Selecionar_Arquivo_Click(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Forms.FolderBrowserDialog file = new System.Windows.Forms.FolderBrowserDialog();
+            file.ShowDialog();
+            string pastaSelecionada = file.SelectedPath;
 
             Arquivo SaveFile = new Arquivo();
-            SaveFile.save_path = DIRETORIO_ARQUIVO_SAVE;
+            SaveFile.save_path = pastaSelecionada;
 
-            SaveFile.AdicionarPastaEArquivos(SaveFile.save_path, SaveFile.all_save_path);
-            SaveFile.AcessarArquivosSalvado(SaveFile.save_path);
-
-
-            for (int i = 0; i < 40; i++)
-            {
-                UserControl1 user = new UserControl1(SaveFile.save_path);
-                Painel.Children.Add(user);
-            }
-
-
+            SaveFile.AdicionarPastaEArquivos(SaveFile.save_path);
+            AdicionarItemTOControle(SaveFile);
 
 
         }

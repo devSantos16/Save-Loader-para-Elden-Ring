@@ -20,10 +20,12 @@ namespace SaveLoaderER
     /// </summary>
     public partial class UserControl1 : UserControl
     {
-        public UserControl1(string nome)
+        public UserControl1(string nome_pasta, string caminho_diretorio)
         {
             InitializeComponent();
-            NomeArquivo.Content = nome;
+            NomeArquivo.Content = nome_pasta;
+            CaminhoDiretorio.Content = caminho_diretorio + @"\" + nome_pasta;
+            //NomeArquivo.Content = caminho_diretorio + @"\" + nome_pasta;
         }
     }
 }

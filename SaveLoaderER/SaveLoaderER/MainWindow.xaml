@@ -13,12 +13,16 @@
         <StackPanel>
             <Grid Margin="0,0,0,334">
                 <Rectangle Height="100" Fill="#E5000000" Margin="0,0,1,0"/>
-                <Button Content="Adicionar Arquivo" Margin="0,0,670,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White"/>
+                <Button Margin="0,0,700,0" BorderBrush="{x:Null}" Foreground="#FFC4C4C4"  VerticalContentAlignment="Bottom" Click="Selecionar_Arquivo_Click" Content="Adicionar Arquivo">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/pasta.png" Stretch="Uniform"/>
+                    </Button.Background>
+                    
+                </Button>
             </Grid>
         </StackPanel>
         <ScrollViewer Margin="0,100,0,0">
-            <StackPanel Name="Painel">
-            </StackPanel>
+            <StackPanel Name="Painel"></StackPanel>
         </ScrollViewer>
 
 

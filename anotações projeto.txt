@@ -14,6 +14,13 @@ O que foi feito:
 	criar banco de dados
 	criar archive_directory
 	
+
+
+Oq tem que fazer agora (temporario)
+
+Criar um diretorio (onde vai conter as pastas dos saves)
+
+
 	
 
 	

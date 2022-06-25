@@ -11,37 +11,41 @@ namespace SaveLoaderER.Classes
     {
         public string save_path { get; set; }
         public string all_save_path { get; set; }
+        public string name_path { get; set; }
 
         public Arquivo()
         {
-            all_save_path = @"C:\Users\nel_2\OneDrive\Resto\Documentos\SAVEFILE_ELDENRING";
+            all_save_path = @"E:\Projetos\SaveLoaderER\Save Loader para Elden Ring\SaveLoaderER\SaveLoaderER\bin\Debug\path_archive";
         }
 
-        public string AcessarArquivosSalvado(string all_save_path)
+        public List<string> AcessarArquivosSalvo()
         {
+            // IDictionary<int, string> dict = new Dictionary<int, string>();
             string[] dirs = Directory.GetDirectories(all_save_path, "*", SearchOption.TopDirectoryOnly);
-            string nomePasta = string.Empty;
+            List<string> all_name_path = new List<string>();
 
-            for (int i = 0; i < dirs.Length; i++)
+            foreach(string lista in dirs)
             {
-                nomePasta = dirs[i];
-                string concat = all_save_path + "\\";
-                nomePasta = nomePasta.Replace(concat, "");
-                return nomePasta;
+                int numeroAspasDiretorio = all_save_path.Split(@"\").Length;
+                name_path = lista.Split(@"\")[numeroAspasDiretorio];
+                all_name_path.Add(name_path);
             }
 
-            return "Erro";
+            return all_name_path;
+
         }
 
-        public void AdicionarPastaEArquivos(string save_path, string all_save_path)
+        public void AdicionarPastaEArquivos(string save_path)
         {
-
             string[] files = Directory.GetFiles(save_path);
             string nomeArquivo, caminhoArquivo;
+            //vou usar alguma hora
+            //
+            //string novoDiretorioArquivoEldenRing = all_save_path + @"\" + save_path.Split(@"\")[numeroAspasDiretorio - 1];
 
-            int numeroAspasDiretorio = save_path.Split(@"\").Length;
-            string novoDiretorioArquivoEldenRing = all_save_path + @"\" + save_path.Split(@"\")[numeroAspasDiretorio - 1];
+            string novoDiretorioArquivoEldenRing = all_save_path + @"\" + RetornarNomeString();
 
+            
             Directory.CreateDirectory(novoDiretorioArquivoEldenRing);
             foreach (string file in files)
             {
@@ -49,6 +53,14 @@ namespace SaveLoaderER.Classes
                 caminhoArquivo = Path.Combine(novoDiretorioArquivoEldenRing, nomeArquivo);
                 File.Copy(file, caminhoArquivo, true);
             }
+        }
+        public string RetornarNomeString()
+        {
+            string[] dirs = Directory.GetDirectories(all_save_path, "*", SearchOption.TopDirectoryOnly);
+
+            name_path = "SAVEFILE_ELDEN_RING_" + dirs.Length;
+
+            return name_path;
         }
     }
 }

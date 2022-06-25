@@ -3,18 +3,28 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
+	  <UseWindowsForms>true</UseWindowsForms>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="background.jpg" />
+    <None Remove="pasta.png" />
     <None Remove="play.png" />
     <None Remove="settings.png" />
+  </ItemGroup>
+	
+
+	<ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>bin\Debug\System.Windows.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="background.jpg" />
+    <Resource Include="pasta.png" />
     <Resource Include="play.png" />
     <Resource Include="settings.png" />
   </ItemGroup>
